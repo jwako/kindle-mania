@@ -1,0 +1,153 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-05 12:22:56 +0900
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (9ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-05 12:36:42 +0900
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jun8/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/jun8/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/jun8/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /Users/jun8/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-05 12:39:09 +0900
+Processing by PublicController#index as HTML
+  Rendered public/index.html.erb within layouts/application (0.4ms)
+Compiled twitter-bootstrap-static/bootstrap.css  (111ms)  (pid 5151)
+Compiled twitter-bootstrap-static/fontawesome.css  (17ms)  (pid 5151)
+Compiled bootstrap_and_overrides.css  (200ms)  (pid 5151)
+Compiled application.css  (212ms)  (pid 5151)
+Compiled jquery.js  (2ms)  (pid 5151)
+Compiled jquery_ujs.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (3ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-tab.js  (1ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 5151)
+Compiled twitter/bootstrap.js  (291ms)  (pid 5151)
+Compiled bootstrap.js  (333ms)  (pid 5151)
+Compiled application.js  (757ms)  (pid 5151)
+Completed 200 OK in 1178ms (Views: 1177.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter-bootstrap-static/bootstrap.css - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /bootstrap_and_overrides.css - 200 OK (5ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter-bootstrap-static/fontawesome.css - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /jquery.js - 200 OK (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (54ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /application.js - 200 OK (79ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /twitter/bootstrap.js - 200 OK (21ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 12:39:10 +0900
+Served asset /jquery_ujs.js - 200 OK (2ms)
