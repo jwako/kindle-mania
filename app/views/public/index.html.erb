@@ -10,4 +10,15 @@
 </div><!--/span-->
 
 <div class="span9">
+	<%= render 'public/header' %>
+	
+	<ul class="thumbnails">
+	<% @items.each do |item| %>
+	<li class="span2">
+		<%= link_to image_tag(item.get('MediumImage/URL'), :class => "thumbnail"), item.get("DetailPageURL"), :target => "_blank" %>
+		<%= item.get("ItemAttributes/Title") %>
+		<%= item.get("ItemAttributes/ListPrice")%>
+	</li>	
+	<% end %>
+	</ul>
 </div><!--/span-->
