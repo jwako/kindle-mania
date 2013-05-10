@@ -25894,3 +25894,53 @@ Processing by PublicController#index as HTML
   Rendered tiles/_header.html.erb (0.4ms)
   Rendered tiles/_footer.html.erb (0.0ms)
 Completed 200 OK in 690ms (Views: 108.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?bn=465610&page=4" for 127.0.0.1 at 2013-05-10 18:25:18 +0900
+Processing by PublicController#index as HTML
+  Parameters: {"bn"=>"465610", "page"=>"4"}
+  Rendered public/_category.html.erb (28.6ms)
+  Rendered public/_header.html.erb (0.3ms)
+  Rendered public/index.html.erb within layouts/application (34.6ms)
+  Rendered tiles/_header.html.erb (0.7ms)
+  Rendered tiles/_footer.html.erb (0.0ms)
+Compiled book-voyager.js  (0ms)  (pid 22380)
+Compiled application.js  (20ms)  (pid 22380)
+Completed 200 OK in 1339ms (Views: 369.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?bn=465610&page=5" for 127.0.0.1 at 2013-05-10 18:25:20 +0900
+Processing by PublicController#index as HTML
+  Parameters: {"bn"=>"465610", "page"=>"5"}
+  Rendered public/_category.html.erb (6.0ms)
+  Rendered public/_header.html.erb (0.3ms)
+  Rendered public/index.html.erb within layouts/application (62.6ms)
+  Rendered tiles/_header.html.erb (0.3ms)
+  Rendered tiles/_footer.html.erb (0.0ms)
+Completed 200 OK in 1375ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?bn=465610&page=6" for 127.0.0.1 at 2013-05-10 18:25:23 +0900
+Processing by PublicController#index as HTML
+  Parameters: {"bn"=>"465610", "page"=>"6"}
+  Rendered public/_category.html.erb (6.5ms)
+  Rendered public/_header.html.erb (0.3ms)
+  Rendered public/index.html.erb within layouts/application (75.2ms)
+  Rendered tiles/_header.html.erb (0.3ms)
+  Rendered tiles/_footer.html.erb (0.0ms)
+Completed 200 OK in 658ms (Views: 124.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/no-image.jpg" for 127.0.0.1 at 2013-05-10 18:25:24 +0900
+Served asset /no-image.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/?bn=465610&page=7" for 127.0.0.1 at 2013-05-10 18:25:25 +0900
+Processing by PublicController#index as HTML
+  Parameters: {"bn"=>"465610", "page"=>"7"}
+  Rendered public/_category.html.erb (68.7ms)
+  Rendered public/_header.html.erb (0.3ms)
+  Rendered public/index.html.erb within layouts/application (75.3ms)
+  Rendered tiles/_header.html.erb (0.4ms)
+  Rendered tiles/_footer.html.erb (0.0ms)
+Completed 200 OK in 717ms (Views: 123.3ms | ActiveRecord: 0.0ms)
