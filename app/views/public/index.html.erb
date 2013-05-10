@@ -12,13 +12,12 @@
 <div class="span9">
 	<%= render 'public/header' %>
 	
-	<ul class="thumbnails">
+	<div id="container">
 	<% @items.each do |item| %>
-	<li class="span2">
+	<div class="item">
 		<%= link_to image_tag(item.get('MediumImage/URL'), :class => "thumbnail"), item.get("DetailPageURL"), :target => "_blank" %>
-		<%= item.get("ItemAttributes/Title") %>
-		<%= item.get("ItemAttributes/ListPrice")%>
-	</li>	
+	</div>	
 	<% end %>
-	</ul>
+	</div>
+	<nav id="page-nav"><%= link_to "", root_path(:page => @page+1) %></nav>
 </div><!--/span-->
