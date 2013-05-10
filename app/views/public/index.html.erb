@@ -1,12 +1,5 @@
 <div class="span3">
-  <div class="well sidebar-nav">
-    <ul class="nav nav-list">
-      <li class="nav-header">Category</li>
-			<% @categories.each do |category| %>
-      <li><%= link_to category["Name"], root_path(:bn => category["BrowseNodeId"])  %></li>
-			<% end %>
-    </ul>
-  </div><!--/.well -->
+	<%= render "public/category", :categories => @categories %>
 </div><!--/span-->
 
 <div class="span9">
@@ -15,9 +8,9 @@
 	<div id="container">
 	<% @items.each do |item| %>
 	<div class="item">
-		<%= link_to image_tag(item.get('MediumImage/URL'), :class => "thumbnail"), item.get("DetailPageURL"), :target => "_blank" %>
+		<%= book_image(item.get('MediumImage/URL'), item.get("DetailPageURL")) %>
 	</div>	
 	<% end %>
 	</div>
-	<nav id="page-nav"><%= link_to "", root_path(:page => @page+1) %></nav>
+	<nav id="page-nav"><%= link_to "", root_path(:bn => @browse_node_id, :page => @page+1) %></nav>
 </div><!--/span-->

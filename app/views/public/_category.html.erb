@@ -1,0 +1,8 @@
+<div class="well sidebar-nav">
+  <ul class="nav nav-list" style="height:800px;">
+    <li class="nav-header">Category</li>
+		<% categories.each do |category| %>
+    <li><%= link_to category["Name"], root_path(:bn => category["BrowseNodeId"])  %></li>
+		<% end %>
+  </ul>
+</div><!--/.well -->
