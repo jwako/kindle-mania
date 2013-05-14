@@ -1,0 +1,79 @@
+<div class="span3">
+	<div id="categoryapp">
+		<div id="categoryapp">
+		<div class="well sidebar-nav">
+		  <ul id="categories" class="nav nav-list" style="height:800px;">
+		    <li class="nav-header">Category</li>
+		  </ul>
+		</div><!--/.well -->
+		</div>
+		<button id='add'>Add list item</button>
+	</div>
+</div><!--/span-->
+
+<div class="span9">
+</div><!--/span-->
+	
+<script type="text/javascript">
+(function($){
+
+	  _.templateSettings = {
+	    interpolate: /\{\{(.+?)\}\}/g,
+	    evaluate: /\{%(.+?)%\}/g,
+	    escape: /\{%-(.+?)%\}/g
+	  };
+	
+	var Category = Backbone.Model.extend({
+	    defaults: function() {
+	      return {
+	        BrowseNodeId: "0000000",
+	        Name: "Name"
+	      };
+	    }
+	  });
+	
+	  var CategoryList = Backbone.Collection.extend({
+	
+	    model: Category,
+	
+	    url: "/public/categories"
+	    
+	  });
+	
+	  var CategoryView = Backbone.View.extend({
+	    el: $('#categoryapp'),
+	
+	    events: {
+	      'click button#add': 'addItem'
+	    },
+	
+	    initialize: function(){
+	      _.bindAll(this, 'render', 'addItem', 'appendItem'); 
+	
+	      this.collection = new CategoryList();
+	      this.collection.bind('add', this.appendItem);
+			this.collection.fetch();
+	      this.render();
+	    },
+	
+	    render: function(){
+	      var self = this;
+	      _(this.collection.models).each(function(item){ 
+	        self.appendItem(item);
+	      }, this);
+	    },
+	
+	    addItem: function(){
+			this.collection.fetch();
+	    },
+	
+	    appendItem: function(item){
+	      $('ul#categories', this.el).append("<li>" + "<a href='/?bn=" + item.get('BrowseNodeId') + "'>" + item.get('Name') + "</a>" + "</li>");
+	    }
+	
+	  });
+
+  var categoryView = new CategoryView();
+
+})(jQuery);
+</script>

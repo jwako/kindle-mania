@@ -13,6 +13,8 @@
     <![endif]-->
 
     <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+
   </head>
   <body>
 		<%= render "tiles/header" %>
@@ -28,11 +30,6 @@
 		<%= render "tiles/footer" %>
 
     </div> <!-- /container -->
-
-    <!-- Javascripts
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag "application" %>
 
   </body>
 </html>
