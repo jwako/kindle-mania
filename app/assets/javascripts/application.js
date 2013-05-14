@@ -15,6 +15,4 @@
 //= require twitter/bootstrap
 //= require underscore-min.js
 //= require backbone-min.js
-//= require namespace.js
-
 //= require_tree .
