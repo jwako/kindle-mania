@@ -13,8 +13,6 @@
     <![endif]-->
 
     <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-
   </head>
   <body>
 		<%= render "tiles/header" %>
@@ -31,5 +29,7 @@
 
     </div> <!-- /container -->
 
+		<%= javascript_include_tag "application" %>
+    
   </body>
 </html>

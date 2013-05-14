@@ -3,11 +3,11 @@ MyApp.Views.CategoryView = Backbone.View.extend({
   el: $('#categoryapp'),
 
   events: {
-    'click button#add': 'addItem'
+    "click a.ctgr" : 'addCategory'
   },
-
+  
   initialize: function(){
-    _.bindAll(this, 'render', 'addItem', 'appendItem'); 
+    _.bindAll(this, 'render', 'addCategory', 'appendItem'); 
 
     this.collection = new MyApp.Collections.CategoryList();
     this.collection.bind('add', this.appendItem);
@@ -22,12 +22,13 @@ MyApp.Views.CategoryView = Backbone.View.extend({
     }, this);
   },
 
-  addItem: function(){
-		this.collection.fetch();
+  addCategory: function(){
+    var category = new MyApp.Models.Category();
+    this.collection.add(category);
   },
-
+  
   appendItem: function(item){
-    $('ul#categories', this.el).append("<li>" + "<a href='/?bn=" + item.get('BrowseNodeId') + "'>" + item.get('Name') + "</a>" + "</li>");
+    $('ul#categories', this.el).append("<li>" + "<a class='ctgr'>" + item.get('Name') + "</a>" + "</li>");
   }
-
+  
 });

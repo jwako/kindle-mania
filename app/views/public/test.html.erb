@@ -1,12 +1,10 @@
 <div class="span3">
 	<div id="categoryapp">
-		<div id="categoryapp">
 		<div class="well sidebar-nav">
 		  <ul id="categories" class="nav nav-list" style="height:800px;">
 		    <li class="nav-header">Category</li>
 		  </ul>
 		</div><!--/.well -->
-		</div>
 		<button id='add'>Add list item</button>
 	</div>
 </div><!--/span-->
@@ -16,12 +14,6 @@
 	
 <script type="text/javascript">
 (function($){
-
-	  _.templateSettings = {
-	    interpolate: /\{\{(.+?)\}\}/g,
-	    evaluate: /\{%(.+?)%\}/g,
-	    escape: /\{%-(.+?)%\}/g
-	  };
 	
 	var Category = Backbone.Model.extend({
 	    defaults: function() {
@@ -44,15 +36,15 @@
 	    el: $('#categoryapp'),
 	
 	    events: {
-	      'click button#add': 'addItem'
+	      'click button#add': 'addCategory'
 	    },
 	
 	    initialize: function(){
-	      _.bindAll(this, 'render', 'addItem', 'appendItem'); 
+	      _.bindAll(this, 'render', 'addCategory', 'appendItem'); 
 	
 	      this.collection = new CategoryList();
 	      this.collection.bind('add', this.appendItem);
-			this.collection.fetch();
+				this.collection.fetch();
 	      this.render();
 	    },
 	
@@ -63,8 +55,9 @@
 	      }, this);
 	    },
 	
-	    addItem: function(){
-			this.collection.fetch();
+	    addCategory: function(){
+				var category = new Category();
+		    this.collection.add(category);
 	    },
 	
 	    appendItem: function(item){
