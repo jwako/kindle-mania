@@ -1,1 +1,1 @@
-MyApp.App = new MyApp.Views.CategoryView();
+MyApp.App = new MyApp.Views.CategoryListView();
