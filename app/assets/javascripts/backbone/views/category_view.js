@@ -3,7 +3,7 @@ MyApp.Views.CategoryView = Backbone.View.extend({
   tagName: "li",
 
   events: {
-    "click a.ctgr" : 'addCategory'
+    "click a.ctgr" : 'toggleCategoryList'
   },
   
   initialize: function() {
@@ -12,17 +12,25 @@ MyApp.Views.CategoryView = Backbone.View.extend({
   },
 
   render: function() {
-    this.$el.html(this.appendItem(this.model));
+    this.$el.html(this.addCategory(this.model));
+    this.$el.attr("id", "bn_" + this.model.get('BrowseNodeId'));
     return this;
   },
 
-  addCategory: function(){    
-    // var category = new MyApp.Models.Category();
-    // this.collection.add(category);
+  toggleCategoryList: function(){
+    if (!this.categoryListView) {
+      this.categoryListView = new MyApp.Views.CategoryListView({ baseBrowseNodeId: this.model.get('BrowseNodeId') });
+    }
+    if (this.categoryListView.$el.attr("style") == "display:block;") {
+      this.categoryListView.clear();
+    } else {
+      this.$el.append(this.categoryListView.render().el);
+    }
+    return false;
   },
   
-  appendItem: function(item){
-    return "<a class='ctgr' id='item_" + item.get('BrowseNodeId') + "'>" + item.get('Name') + "</a>";
+  addCategory: function(category){
+    return "<a class='ctgr'>" + category.get('Name') + "</a>";
   }
   
 });
