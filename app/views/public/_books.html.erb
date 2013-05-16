@@ -1,0 +1,8 @@
+<div id="container">
+<% items.each do |item| %>
+<div class="item">
+	<%= book_image(item.get('MediumImage/URL'), item.get("DetailPageURL")) %>
+</div>	
+<% end %>
+</div>
+<nav id="page-nav"><%= link_to "", root_path(:bn => browse_node_id, :page => page+1) %></nav>
