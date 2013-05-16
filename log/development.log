@@ -39513,3 +39513,229 @@ Started GET "/public/categories?bn=507474" for 127.0.0.1 at 2013-05-15 17:35:30 
 Processing by PublicController#categories as JSON
   Parameters: {"bn"=>"507474"}
 Completed 200 OK in 222ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/categories?bn=492054" for 127.0.0.1 at 2013-05-15 17:37:53 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"492054"}
+Completed 200 OK in 574ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/categories?bn=505312" for 127.0.0.1 at 2013-05-15 17:37:57 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"505312"}
+Completed 200 OK in 222ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/categories?bn=505322" for 127.0.0.1 at 2013-05-15 17:37:58 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"505322"}
+Completed 200 OK in 215ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/categories?bn=2132889051" for 127.0.0.1 at 2013-05-15 17:37:59 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"2132889051"}
+Completed 200 OK in 225ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/categories?bn=505316" for 127.0.0.1 at 2013-05-15 17:38:00 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"505316"}
+Completed 200 OK in 245ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/categories?bn=505344" for 127.0.0.1 at 2013-05-15 17:38:01 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"505344"}
+Completed 200 OK in 224ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/categories?bn=492166" for 127.0.0.1 at 2013-05-15 17:38:02 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"492166"}
+Completed 200 OK in 241ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/categories?bn=500824" for 127.0.0.1 at 2013-05-15 17:38:03 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"500824"}
+Completed 200 OK in 249ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?bn=465610&page=2" for 127.0.0.1 at 2013-05-15 17:38:09 +0900
+Processing by PublicController#index as HTML
+  Parameters: {"bn"=>"465610", "page"=>"2"}
+  Rendered public/_header.html.erb (0.4ms)
+  Rendered public/index.html.erb within layouts/application (5.2ms)
+  Rendered tiles/_header.html.erb (0.5ms)
+  Rendered tiles/_footer.html.erb (0.0ms)
+Completed 200 OK in 959ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-16 13:33:33 +0900
+Processing by PublicController#index as HTML
+  Rendered public/_header.html.erb (1.3ms)
+  Rendered public/index.html.erb within layouts/application (60.9ms)
+  Rendered tiles/_header.html.erb (0.9ms)
+  Rendered tiles/_footer.html.erb (0.7ms)
+Completed 200 OK in 1210ms (Views: 520.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /twitter/bootstrap.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/underscore-min.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /underscore-min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/backbone-min.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /backbone-min.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/backbone/namespace.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /backbone/namespace.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/backbone/models/category.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /backbone/models/category.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/backbone/collections/category_list.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /backbone/collections/category_list.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/backbone/views/category_view.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /backbone/views/category_view.js - 200 OK (4ms)
+
+
+Started GET "/assets/backbone/views/category_app_view.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /backbone/views/category_app_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/backbone/book-voyager.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /backbone/book-voyager.js - 200 OK (2ms)
+
+
+Started GET "/assets/backbone/views/category_list_view.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:35 +0900
+Served asset /backbone/views/category_list_view.js - 200 OK (5ms)
+
+
+Started GET "/assets/backbone/base.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:36 +0900
+Served asset /backbone/base.js - 200 OK (12ms)
+
+
+Started GET "/assets/app_masonry.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:36 +0900
+Served asset /app_masonry.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:36 +0900
+Served asset /bootstrap.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.infinitescroll.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:36 +0900
+Served asset /jquery.infinitescroll.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:36 +0900
+Served asset /jquery.masonry.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-16 13:33:36 +0900
+Served asset /application.js - 304 Not Modified (44ms)
+
+
+Started GET "/public/categories?bn=465610" for 127.0.0.1 at 2013-05-16 13:33:36 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"465610"}
+Completed 200 OK in 262ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/categories?bn=466284" for 127.0.0.1 at 2013-05-16 13:33:38 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"466284"}
+Completed 200 OK in 246ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/categories?bn=548206" for 127.0.0.1 at 2013-05-16 13:33:39 +0900
+Processing by PublicController#categories as JSON
+  Parameters: {"bn"=>"548206"}
+Completed 200 OK in 262ms (Views: 0.2ms | ActiveRecord: 0.0ms)

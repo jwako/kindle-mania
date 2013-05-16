@@ -12,3 +12,4 @@ MyApp.Views.CategoryAppView = Backbone.View.extend({
   }
         
 });
+
