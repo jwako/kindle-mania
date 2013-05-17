@@ -15,8 +15,6 @@ MyApp.Views.CategoryListView = Backbone.View.extend({
   
   render: function(){
     this.$el.attr("style", "display:block;");
-    // this.$el.removeAttr("style");
-    // this.$el.attr("id", "bn_" + this.options.baseBrowseNodeId);
     return this;
   },
   
@@ -26,7 +24,6 @@ MyApp.Views.CategoryListView = Backbone.View.extend({
   },
   
   clear: function() {
-    // this.remove();
     this.$el.attr("style", "display:none;");
   }
       

@@ -6,7 +6,5 @@
 //= require backbone/views/category_view.js
 //= require backbone/views/category_list_view.js
 //= require backbone/views/category_app_view.js
-//= require backbone/views/book_list_view.js
-//= require backbone/views/book_app_view.js
 //= require backbone/views/book_container_view.js
 //= require backbone/book-voyager.js
