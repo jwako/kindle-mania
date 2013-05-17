@@ -37,6 +37,7 @@ MyApp.Views.BookContainerView = Backbone.View.extend({
       function( json, opts ) {
         bookLi = new MyApp.Collections.BookList(json);
         bookLi.each(self.addOne, self);
+        // TODO: bookLi doesn't includes html tag, it is just a collection. so it has to change view
         container.masonry('appended', bookLi, true);
         // container.append(json[0]["MediumImageURL"]);
         // var $newElems = $( newElements ).css({ opacity: 0 });
