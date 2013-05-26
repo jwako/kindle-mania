@@ -1,3 +1,26 @@
+var Books = Backbone.Collection.extend({
+
+  model: MyApp.Models.Book,
+
+  url: "/public/books"
+  
+});
+
+var BookView = Backbone.View.extend({
+  
+  tagName: "div",
+  className: "item",
+
+  initialize: function(){
+		this.render(this.model);
+  },
+  
+  render: function(book){
+		this.$el.append("<a href='" + book.get("DetailPageURL") + "'><img src='" + book.get("MediumImageURL") + "'/></a>");
+  }
+      
+});
+
 MyApp.Views.BookContainerView = Backbone.View.extend({
   
   baseBrowseNodeId: '465610',
@@ -35,22 +58,26 @@ MyApp.Views.BookContainerView = Backbone.View.extend({
         }
       },
       function( json, opts ) {
-        bookLi = new MyApp.Collections.BookList(json);
-        bookLi.each(self.addOne, self);
-        // TODO: bookLi doesn't includes html tag, it is just a collection. so it has to change view
-        container.masonry('appended', bookLi, true);
-        // container.append(json[0]["MediumImageURL"]);
-        // var $newElems = $( newElements ).css({ opacity: 0 });
-        // $newElems.imagesLoaded(function(){
-        //   $newElems.animate({ opacity: 1 });
-        //   container.masonry( 'appended', $newElems, true ); 
-        // });
+				var page = opts.state.currPage + 1;
+				self.$('#page-nav a').replaceWith("<a href='/public/books.json?bn=" + self.options.baseBrowseNodeId + "&amp;page=" + page + "'></a>");
+        var $books = self.addBookList(json).children('div');
+				container.append($books).masonry('appended', $books, true);
       }
     );
   },
     
   addOne: function(book) {
     this.$el.append("<div class='item'><a href='" + book.get("DetailPageURL") + "'><img src='" + book.get("MediumImageURL") + "'/></a></div>");
+  },
+
+	addBookList: function(json) {
+		var books = new Books(json);
+		var bookLi = $('<div></div>');
+		books.each(function(book){
+			var bookView = new BookView({ model: book});
+			bookLi.append(bookView.el);
+		});
+		return bookLi;
   }
-        
+
 });

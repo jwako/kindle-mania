@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require jquery.masonry.min.js
+//= require jquery.masonry.js
 //= require jquery.infinitescroll.js
 //= require underscore-min.js
 //= require backbone-min.js
