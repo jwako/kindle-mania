@@ -1,26 +1,3 @@
-var Books = Backbone.Collection.extend({
-
-  model: MyApp.Models.Book,
-
-  url: "/public/books"
-  
-});
-
-var BookView = Backbone.View.extend({
-  
-  tagName: "div",
-  className: "item",
-
-  initialize: function(){
-		this.render(this.model);
-  },
-  
-  render: function(book){
-		this.$el.append("<a href='" + book.get("DetailPageURL") + "'><img src='" + book.get("MediumImageURL") + "'/></a>");
-  }
-      
-});
-
 MyApp.Views.BookContainerView = Backbone.View.extend({
   
   baseBrowseNodeId: '465610',
@@ -71,10 +48,10 @@ MyApp.Views.BookContainerView = Backbone.View.extend({
   },
 
 	addBookList: function(json) {
-		var books = new Books(json);
+		var books = new MyApp.Collections.BookList(json);
 		var bookLi = $('<div></div>');
 		books.each(function(book){
-			var bookView = new BookView({ model: book});
+			var bookView = new MyApp.Views.BookView({ model: book});
 			bookLi.append(bookView.el);
 		});
 		return bookLi;
