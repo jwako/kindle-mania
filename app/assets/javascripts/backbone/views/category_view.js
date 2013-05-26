@@ -26,6 +26,9 @@ MyApp.Views.CategoryView = Backbone.View.extend({
     } else {
       this.$el.append(this.categoryListView.render().el);
     }
+
+		$('#container').html("<nav id='page-nav'></nav>");
+		this.bookContainer = new MyApp.Views.BookContainerView({baseBrowseNodeId : this.model.get('BrowseNodeId') });
     return false;
   },
   

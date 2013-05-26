@@ -35,7 +35,7 @@ MyApp.Views.BookContainerView = Backbone.View.extend({
         }
       },
       function( json, opts ) {
-				var page = opts.state.currPage + 1;
+				var page = Number(self.$('#page-nav a').attr("href").match(/page=([0-9]+)/)[1]) + 1;
 				self.$('#page-nav a').replaceWith("<a href='/public/books.json?bn=" + self.options.baseBrowseNodeId + "&amp;page=" + page + "'></a>");
         var $books = self.addBookList(json).children('div');
 				container.append($books).masonry('appended', $books, true);
